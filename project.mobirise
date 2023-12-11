@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Site 2023-12-11 13:27",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/dextools-128x130.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://dextoolx.github.io/sitemap.xml\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://dextoolx.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "ilrcxwx352",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Dextools™ | Home Official Site",
+        "meta_descr": "DEXTools, the gateway to DEFI, real-time charts, history and all token info from blockchain.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.dextools.io/\"><img src=\"@PROJECT_PATH@/assets/images/dextools-1920x1720.png\" alt=\"dextools\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tY7dwsvJd5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Dextools™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipment tracking</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Rise of DexTools: Powering the Decentralized Exchange Revolution\n<br>Since their emergence in 2017, decentralized exchanges (DEXes) have steadily gained ground against centralized counterparts, capturing over 30% of crypto swap volumes by late 2022. This rise correlates strongly with the proliferation of Automated Market Maker (AMM) protocols like Uniswap that kickstarted the DEX renaissance.\n<br>\n<br>However, while AMMs lowered barriers to entry for creating DEXes, they initially lacked the sophisticated tools and interfaces retail traders were accustomed to on CEX platforms. This is where Dextools emerged as the definitive interface powering an entire generation of DEX exploration and growth.\n<br>\n<br>The Foundations of a DEX Powerhouse\n<br>Launched in early 2019 by former Matrixport developers, Dextools set out to build “the Bloomberg Terminal for decentralized exchanges” - aggregating key swap metrics, charting capabilities and market data APIs beloved by institutional traders.\n<br>\n<br>Its initial product focused on Uniswap, garnering early traction amongst whales and speculators. However, unlike most analytics platforms, Dextools adopted an open-source ethos - welcoming integrations from any upcoming DEX in a collaborative spirit.\n<br>\n<br>This foresight unlocked exponential virality as new AMMs like Sushiswap and QuickSwap rose. Dextools smoothly supported swarms of users transitioning to emerging pools, propelling these nascent <a href=\"https://dextoolx.github.io/\" class=\"text-primary\">DEXtools</a> upwards from information availability alone.\n<br>\n<br>Rapid Growth Fueling Community Expansion\n<br>Unanticipated success snowballed responsibilities and led the young startup to prioritize community early. Dextools launched a native governance token $DMG allowing feedback incorporation whilst incentivizing loyal liquidity through staking pools.\n<br>\n<br>This engaged users directly - who swiftly organized volunteering roles across moderation, education and feature wish-listing. Passion projects like translation communities proliferated, globalizing the platform organically.\n<br>\n<br>By actively decentralizing processes, Dextools scaled qualitative growth sustainably. Expansions covered analytics, alerts, limit orders and developer tools - transforming into a one-stop DeFi ecosystem navigator endorsed by Binance and major protocols.\n<br>\n<br>The Gateway Drug of DEX Adoption\n<br>Accessibility lies at Dextools’ core. Sleek widgets seamlessly embed within any DApp, on-chain protocols or media sites - introducing hordes to novel DEX concepts through familiar interfaces.\n<br>\n<br>Features like one-click Uniswap/Quickswap/Sushiswap deployment catalyzed explosion of dexfin innovations. Their open orderbook format streamlined market making - empowering yield farmers profitably providing essential blockchain liquidity.\n<br>\n<br>In turn, new DEX infrastructures arose running full nodes alongside aggregating entities. Projects like Dune, ZeroSwap and VSwap gained instant traction through native Dextools integrations - demonstrating their model’s powerful virality.\n<br>\n<br>Navigating Growing Complexity of Decentralization\n<br>However, decentralized protocols also present unique challenges around security, governance and fragmentation. As ecosystem responsibilities multiplied, Dextools emphasized prudent adaptation:\n<br>\n<br>Strict vetting criteria promoted inclusion of only audited, verified partners mitigating risks.\n<br>\n<br>Technical audits hardening codebase resilience against potential exploits preserving user trust.\n<br>\n<br>Empowering community self-governance through proposals balanced centralization concerns.\n<br>\n<br>Embracing standards like EIP-2672 allowed unified integration of even the most obscure platforms.\n<br>\n<br>Adhering to open-source best practices helped scale qualitatively - avoiding pitfalls of hastily capitalizing on popularity through compromise.\n<br>\n<br>Propelling the DEX Renaissance\n<br>Today, Dextools' influence permeates all spheres of decentralized exchange. Its comprehensive data APIs power countless third-party dashboards, publications and market intel platforms globally.\n<br>\n<br>Over 5 million monthly active users rely on its intuitive swap references covering novel layer-two networks like Arbitrum and Optimism. Major DEXes promote it integrally within their own interfaces.\n<br>\n<br>Most remarkably, <a href=\"https://www.dextools.io/\" class=\"text-primary\">Dextools</a> embodies how decentralized, non-custodial services can thrive sustainably through community participation rather than venture-backed growth hacking alone. Its journey exemplifies grassroots projects propelling technological revolutions forward meaningfully.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tY7dxlPbVp",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
